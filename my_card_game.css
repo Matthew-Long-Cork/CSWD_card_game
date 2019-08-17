@@ -1,0 +1,127 @@
+body{
+	background-color: black;
+}
+#score_board{
+	position:absolute;
+	width:225px;
+	height:140px;
+	/*border:1px solid green;*/
+	margin-left:40px;
+	margin-top:10px;
+}
+#score_board{
+	/*border:1px solid green;*/
+	width:225px;
+	color: white;
+	font-size: 26px;
+}
+#score_board p{
+	margin-left: 10px;
+}
+#player_score{
+	/*border:1px solid white;*/
+	height: 50px;
+	width: 50px;
+	margin-left: 45px;
+}
+#computer_score{
+	/*border:1px solid white;*/
+	height: 50px;
+	width: 50px;
+	margin-left: 140px;
+	margin-top: -50px;
+}
+#settings_gear_button{
+	position:absolute;
+	width:100px;
+	height:100px;
+	margin-left: 90%;
+	margin-top: 2.5%;
+	border-radius: 15px;/*px for uniformity*/
+	/*border:1px solid green;*/
+}
+#setting_icon{
+	width:100px;
+	height:100px;
+	border-radius: 15px;/*px for uniformity*/
+	/*border:1px solid red;*/
+}
+#settings_menu{
+	width:175px;
+	height:300px;
+	height:300px;
+	/*border:1px solid white;*/
+	position: absolute;
+	z-index: 2;
+	margin-left: 85%;
+	margin-top: 10%;
+	font-size: 26px;
+	background-color: black;
+	border-radius: 15px;/*px for uniformity*/
+	visibility: hidden;
+	color: white;
+	border: 2px solid white;
+}
+#message_box{
+	width:420px;
+	height:410px;
+	/*border:1px solid green;*/
+	margin-left: 66%;
+	margin-top: -23%;
+	position: absolute;
+	z-index: 2;
+	visibility: hidden;
+}
+#message_text{
+	font-size: 48px;
+	color: white;
+	text-align: right;
+	border: 5px solid orange;
+	border-radius: 15px;/*px for uniformity*/
+	float: left;
+	margin-top: 130px;
+	padding: 10px;
+	/*width: 175px;you win*/
+	/*width: 185px;you lose*/
+	width: 175px;
+}
+#card_table{
+	width: 860px;
+	height: 550px;  
+	border: 5px solid white;
+	border-radius: 25px;/*px for uniformity*/
+	position: absolute;
+	margin-left: calc((100vw - 860px)/2); /*look into why this is not centered!!!*/ 
+	margin-top: calc(100vh/20); /*5%*/
+	background-color: black;
+	position: absolute;
+	z-index: 1;
+}
+#card_1,#card_2,#card_3{
+	width: 25%;
+	height: 53%;        
+	display: inline-block;
+	border-radius: 30px;/*px for uniformity*/
+	margin-left: 2%;
+	margin-top: 10%;
+}
+#card_1{
+	margin-left: 10%;
+}
+#shuffle_button{
+	width: 20%;
+	height: 50px;  
+	margin-left: 40%;
+	margin-top: 7%;
+	background-color: white;
+	border-radius: 10px;/*px for uniformity*/
+	font-weight: bold;
+}
+#show_cards_button{
+	width: 20%;
+	height: 50px;  
+	margin-left: 5%;
+	margin-top: 2.5%;
+	/*border:1px solid green;*/
+	border-radius: 10px;/*px for uniformity*/
+}

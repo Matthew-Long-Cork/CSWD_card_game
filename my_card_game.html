@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<title>My Card Game</title>
+		
+		<link rel="stylesheet" type="text/css" href="my_card_game.css">
+		<script type="text/javascript" src="my_card_game.js"></script>				
+	</head>
+	
+	<body>
+	
+		<div id="score_board" title="Score Board">			
+			<p>Player Vs Computer</p>
+			<div id="player_score"></div>
+			<div id="computer_score"></div>				
+		</div>
+			
+		<input type="image" id="settings_gear_button" title="Setting gear" onclick="toggle_options()"/>
+
+		<div id="settings_menu" title="Settings menu">
+				
+				<input type="radio" id="theme_one" value="theme_one" checked onchange="handleChange(this);">Theme 1<br>
+				<input type="radio" id="theme_two" value="theme_two" onchange="handleChange(this);" >Theme 2<br>
+				<input type="radio" id="theme_three" value="theme_three" onchange="handleChange(this);">Theme 3<br>  
+				
+				<input type="checkbox" name="game_border" value="game_border" checked onclick="toggle_border()">Border<br>			
+				<input type="checkbox" name="game_feedback" value="game_feedback" checked onclick="toggle_feedback()">Feedback<br>
+		</div>
+			
+		<div id="card_table">
+		
+			<img id="card_1" title="Card one" src="cswdimages/cswdimages/back.png" onclick="process(this)">
+			<img id="card_2" title="Card two" src="cswdimages/cswdimages/back.png" onclick="process(this)">
+			<img id="card_3" title="Card three" src="cswdimages/cswdimages/back.png" onclick="process(this)">
+			
+			<button type="button" id="shuffle_button" title="Shuffle button" onclick="shuffle()">Shuffle Cards</button>
+				
+			<div id="message_box">
+				<p id="message_text"></p>
+				<img id="message_queen" title="This is the Queen" src="cswdimages/cswdimages/bigqueen-transparent.png">
+			</div>			
+		</div>
+		
+	</body>
+</html>
